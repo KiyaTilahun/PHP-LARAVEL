@@ -164,9 +164,9 @@ li{
                echo "<div class='block'><label>Diary Title</label> <input type='text' value=".$record['diary_title']." readonly><br>";
                      echo "<label>Diary date</label> <input type='text' value=".$record['diary_date']." readonly><br>";
              echo "<label>Diary Category</label> <input type='text' value=".$record['diary_category']." readonly><br>";
-             echo "<label>Diary Content</label> <textarea rows='5' col='50' readonly>" .$record['diary_content']."</textarea>";
-             echo "<button style='border-radius: 12px; color: #fff; padding: 5px;width:50px'><a href = 'editDiary.php?diary_id=".$record['diary_id']."'>Edit</a></button> 
-             </div>";
+             echo "<label>Diary Content</label> <textarea rows='5' col='50' readonly>" .$record['diary_content']."</textarea> </div>";
+            //  echo "<button style='border-radius: 12px; color: #fff; padding: 5px;width:50px'><a href = 'editDiary.php?diary_id=".$record['diary_id']."'>Edit</a></button> 
+            //  </div>";
             
             }
             

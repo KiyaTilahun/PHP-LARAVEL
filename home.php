@@ -158,19 +158,19 @@ legend{
                                 ".$record['user_email']."></td>
                             </tr>";?>
                            
-   <?php echo "
+   <!-- <?php echo "
                          <tr>
                             
                                 <td><label for='dob'>Birth Date</label></td>
                                <td><input type='date' id='dob' name='dob' readonly value=
                                 ".$recordi['user_dob']." ></td>
-                            </tr>";?> 
-<?php echo "
+                            </tr>";?>  -->
+<!-- <?php echo "
                             <tr>
                                 <td><label for='phone'>Contact No.</label></td>
                                 <td><input type='text' id='phone' name='phone' readonly value=
                              ".$recordi['user_phone']."></td>
-                            </tr>";?>
+                            </tr>";?> -->
                             <tr>
                                 <td><button type="submit" name="submit" style="margin :10px;height: 30px;width:100px;"><a href="edit.php">Edit Profile</a></button></td>
                                 <td></td>
