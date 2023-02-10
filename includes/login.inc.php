@@ -4,10 +4,16 @@ session_start();
 if(isset($_POST['submit']))
 {
     include 'dbh.inc.php';
-    $uid = mysqli_real_escape_string($conn,$_POST['uid']);
+    $uid=$_POST['uid'];     //id number
+    $pwd=$_POST['pwd'];     //password
+    $uid=stripcslashes($uid);  //removing backslashes to avoid sql injection
+    $uid = mysqli_real_escape_string($conn,$_POST['uid']); //escaping special characters
+    $pwd1=stripcslashes($pwd);
     $pwd = mysqli_real_escape_string($conn,$_POST['pwd']);
-    $email = mysqli_real_escape_string($conn,$_POST['email']);
+    // $email = mysqli_real_escape_string($conn,$_POST['email']);
     
+
+
     // Error handler
     //check for empty
     if(empty($uid) || empty($pwd)){

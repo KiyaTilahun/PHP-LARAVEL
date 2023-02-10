@@ -105,10 +105,8 @@ li{
         </ul>
     </div>
     <div class="greeting">
-    <?php
-         if(isset($_SESSION['u_id'])){
-        echo  "Welcome ".$_SESSION['u_first'];
-    }   ?>
+    <!-- //this is html line which is vulnerable to cross site scripting -->
+        <p> Welcome <?php echo $_SESSION['u_first']?></p>     
     </div>
 
 </header>

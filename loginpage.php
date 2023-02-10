@@ -15,7 +15,7 @@
 				<h2>Log In</h2>
 			</div>
 			<form action="includes/login.inc.php" method="POST">
-	            <label for="username">Username</label>
+	            <label for="username">UserId</label>
 				<br>
 				<input type="text" id="username" name="uid" required>
 				<br>

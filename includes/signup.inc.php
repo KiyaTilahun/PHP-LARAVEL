@@ -3,7 +3,11 @@
     session_start();
     if(isset($_POST['submit'])){    
         include_once 'dbh.inc.php';
+        
+        
         $fname=mysqli_real_escape_string($conn,$_POST['fname']);
+        $fname=htmlspecialchars($fname);   //this will avoid the cross side scripting which
+                                            // is used to redirect users to another page
         $lname=mysqli_real_escape_string($conn,$_POST['lname']);
         $uid=mysqli_real_escape_string($conn,$_POST['uid']);
         $email=mysqli_real_escape_string($conn,$_POST['email']);

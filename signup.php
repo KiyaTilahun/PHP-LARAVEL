@@ -73,7 +73,7 @@ $_SESSION["answer"]=$realanswer;
                                     
                                     ?></td>
                             <tr>
-                                <td><label for="Uname">User Name</label><span><d style="color:red; margin-left:3px;">*</d></span></td>
+                                <td><label for="Uname">NEW User ID</label><span><d style="color:red; margin-left:3px;">*</d></span></td>
                                   <td><?php 
                                     if(isset($_GET['uid'])){
                                     $uid = $_GET['uid'];
