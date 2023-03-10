@@ -66,7 +66,8 @@ border-radius: 5px;
 }
 
 .active {
-    background-color: green;
+    /* background-color: green; */
+    border-bottom:1px solid green;
     color: white;
 }
 

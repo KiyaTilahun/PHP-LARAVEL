@@ -105,8 +105,8 @@ li{
         </ul>
     </div>
     <div class="greeting">
-    <!-- //this is html line which is vulnerable to cross site scripting -->
-        <p> Welcome <?php echo $_SESSION['u_first']?></p>     
+        <p> Welcome <?php echo $_SESSION['u_first']?></p>    
+         <!-- //this is html line which is vulnerable to cross site scripting -->
     </div>
 
 </header>

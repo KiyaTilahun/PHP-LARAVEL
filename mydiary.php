@@ -1,8 +1,9 @@
 <?php
 
 session_start();
+// how to stop direct access to a page without login in PHP
 if(!isset($_SESSION['u_uid'])){
-   header("Location: loginpage.php");
+   header("Location: loginpage.php");     
 }else{
     include 'includes/dbh.inc.php';
         $user_uid=$_SESSION['u_uid'];
