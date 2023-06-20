@@ -38,9 +38,21 @@
         @include('admin.navbar')
         <div class="container-fluid page-body-wrapper">
             <!-- partial:partials/_navbar.html -->
-
+           
             <div class="container text-center pt-5">
-                <form action="" >
+
+            @if(session()->has('message'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong> {{session()->get('message')}}</strong> 
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">X</button>
+</div>
+
+
+
+            @endif
+
+                <form action="{{url('upload_doctor')}}" method="POST" enctype="multipart/form-data">
+                    @csrf
                     <div class="mb-1 p-2 ">
                         <label class="form-label" for="doctor_name">Name</label>
                         <input style="color: black;"  type="text" id="form3Example1q"  name="name" placeholder="doctor's name"/>

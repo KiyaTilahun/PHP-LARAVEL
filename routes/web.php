@@ -29,3 +29,5 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+// 
+Route::post('/upload_doctor',[AdminController::class,'upload']);
