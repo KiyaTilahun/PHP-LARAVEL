@@ -55,17 +55,17 @@
                     @csrf
                     <div class="mb-1 p-2 ">
                         <label class="form-label" for="doctor_name">Name</label>
-                        <input style="color: black;"  type="text" id="form3Example1q"  name="name" placeholder="doctor's name"/>
+                        <input style="color: black;"  type="text" id="form3Example1q"  name="name" placeholder="doctor's name" required/>
 
                     </div>
                     <div class="mb-1 p-2">
                         <label class="form-label" for="phone1">Phone</label>
-                        <input style="color: black;" type="number" id="phone1"  name="phone" placeholder="phone  number"/>
+                        <input style="color: black;" type="number" id="phone1"  name="phone" placeholder="phone  number" required/>
 
                     </div>
                     <div class="mb-1 p-2">
                         <label  class="form-label" for="speciallity">Speciallity</label>
-                       <select style="color: black;" name="spec_sele" id="speciallity">
+                       <select style="color: black;" name="spec_sele" id="speciallity" required>
                         <option value="">--select doctor--</option>
                         <option value="Skin_Doctor">Skin_Doctor</option>
                         <option value="Heart_Doctor">Heart_Doctor</option>
@@ -76,12 +76,12 @@
                     </div>
                     <div class="mb-1 p-2">
                         <label class="form-label" for="roomnum">Room_Number</label>
-                        <input style="color: black;" type="text" id="roomnum"  name="room" placeholder="room_num"/>
+                        <input style="color: black;" type="text" id="roomnum"  name="room" placeholder="room_num" required/>
 
                     </div>
                     <div class="mb-1 p-2">
                         <label class="form-label" for="docimg">Doctor Image</label>
-                       <input type="file" name="file" id="">
+                       <input type="file" name="file" id="" required> 
 
                     </div>
                     <div class="mb-1 p-2">
